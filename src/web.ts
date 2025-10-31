@@ -13,10 +13,11 @@ export class ApplePayWeb extends WebPlugin implements ApplePayPlugin {
   private _paymentResponse?: PaymentResponse;
 
   constructor() {
-    super({
-      name: 'ApplePay',
-      platforms: ['web'],
-    });
+    // super({
+    //   name: 'ApplePay',
+    //   platforms: ['web'],
+    // });
+    super();
   }
   
   async canMakePayments(
